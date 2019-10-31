@@ -1,0 +1,5 @@
+binary "https://building42.github.io/Specs/Carthage/iOS/Crashlytics.json" "3.13.4"
+binary "https://building42.github.io/Specs/Carthage/iOS/Fabric.json" "1.10.2"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.8.1"
+github "ntunin/CrashlyticsBroad" "c7db034355306285a2ce051b927b641fcccd8821"
+github "rosberry/ButterBroad" "9c26f0c95cc357f941ea04df57460ccfe50ca705"

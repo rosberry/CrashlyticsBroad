@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oc7-KU-Sll">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bqE-hM-dqL">
+            <objects>
+                <viewController id="oc7-KU-Sll" customClass="ViewController" customModule="CrashlyticsBroadExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWF-rg-UXx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ULH-kC-y0u">
+                                <rect key="frame" x="0.0" y="253" width="414" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFl-uH-n4k">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type event that you want to log there:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yks-cw-B0b">
+                                                <rect key="frame" x="16" y="40" width="382" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBN-ia-OES">
+                                                <rect key="frame" x="16" y="102" width="382" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="CGe-Gx-2B9"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-rl-Wzs">
+                                                <rect key="frame" x="184" y="158" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="8dD-mQ-Tcu"/>
+                                                    <constraint firstAttribute="height" constant="30" id="iKp-Zd-0Gl"/>
+                                                </constraints>
+                                                <state key="normal" title="Log"/>
+                                                <connections>
+                                                    <action selector="logEvengtDidTapped:" destination="oc7-KU-Sll" eventType="touchUpInside" id="jWw-wL-CdA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="yks-cw-B0b" firstAttribute="top" secondItem="OFl-uH-n4k" secondAttribute="top" constant="40" id="6r1-6X-s1O"/>
+                                            <constraint firstAttribute="trailing" secondItem="yks-cw-B0b" secondAttribute="trailing" constant="16" id="8oS-ia-saS"/>
+                                            <constraint firstItem="zBN-ia-OES" firstAttribute="leading" secondItem="OFl-uH-n4k" secondAttribute="leading" constant="16" id="IUf-nV-pu9"/>
+                                            <constraint firstAttribute="trailing" secondItem="zBN-ia-OES" secondAttribute="trailing" constant="16" id="Xe0-Oy-jov"/>
+                                            <constraint firstItem="qtl-rl-Wzs" firstAttribute="top" secondItem="zBN-ia-OES" secondAttribute="bottom" constant="24" id="diM-dG-pgT"/>
+                                            <constraint firstItem="zBN-ia-OES" firstAttribute="top" secondItem="yks-cw-B0b" secondAttribute="bottom" constant="12" id="kjC-ug-fKj"/>
+                                            <constraint firstItem="qtl-rl-Wzs" firstAttribute="centerX" secondItem="OFl-uH-n4k" secondAttribute="centerX" id="l35-rO-F86"/>
+                                            <constraint firstItem="yks-cw-B0b" firstAttribute="leading" secondItem="OFl-uH-n4k" secondAttribute="leading" constant="16" id="vhp-Dw-V0a"/>
+                                            <constraint firstAttribute="bottom" secondItem="qtl-rl-Wzs" secondAttribute="bottom" constant="12" id="wfy-ML-REQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ULH-kC-y0u" firstAttribute="centerY" secondItem="kWQ-k9-w2T" secondAttribute="centerY" constant="-100" id="6F1-Rr-gwF"/>
+                            <constraint firstItem="kWQ-k9-w2T" firstAttribute="leading" secondItem="ULH-kC-y0u" secondAttribute="leading" id="98U-Ce-R2j"/>
+                            <constraint firstItem="kWQ-k9-w2T" firstAttribute="trailing" secondItem="ULH-kC-y0u" secondAttribute="trailing" id="xXr-E5-ahb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kWQ-k9-w2T"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="zBN-ia-OES" id="XjA-uZ-iBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxL-2j-wEQ" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
