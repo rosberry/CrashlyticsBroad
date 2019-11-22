@@ -12,9 +12,9 @@ import Firebase
 import Crashlytics
 
 final public class CrashlyticsBroad: ButterBroad.Analytics {
-    
+
     private var isFireBaseEnabled: Bool
-    
+
     public init(withFirebase isFireBaseEnabled: Bool = true) {
         self.isFireBaseEnabled = isFireBaseEnabled
         Fabric.with([Crashlytics.self])
