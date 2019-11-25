@@ -1,8 +1,6 @@
 //
-//  ViewController.swift
-//  CrashlyticsBroadExample
+//  AppDelegate.swift
 //
-//  Created by Nick Tyunin on 22/08/2019.
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
 
