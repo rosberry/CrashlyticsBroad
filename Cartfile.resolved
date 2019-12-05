@@ -1,5 +1,5 @@
 binary "https://building42.github.io/Specs/Carthage/iOS/Crashlytics.json" "3.14.0"
 binary "https://building42.github.io/Specs/Carthage/iOS/Fabric.json" "1.10.2"
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.11.0"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.13.0"
 github "Flight-School/AnyCodable" "0.2.3"
-github "rosberry/ButterBroad" "d481c326d6fb37a1d5afb805864e2bc276ae1d1c"
+github "rosberry/ButterBroad" "d0e1545751b612da7d7306f973a4470c17b80522"

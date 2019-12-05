@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0112A45B236AE848001B9A7C /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45A236AE848001B9A7C /* AnyCodable.framework */; };
 		0112A45C236AE848001B9A7C /* AnyCodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45A236AE848001B9A7C /* AnyCodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0139B5682399187900CD73FB /* CrashlyticsBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A8A4E230E78DB002600FF /* CrashlyticsBroad.framework */; };
+		0139B56F2399197F00CD73FB /* CrashlyticsBroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B5652399187900CD73FB /* CrashlyticsBroadTests.swift */; };
 		015A8A64230E7D56002600FF /* ButterBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A8A63230E7D56002600FF /* ButterBroad.framework */; };
 		015A8A69230E7DC9002600FF /* CrashlyticsBroad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A68230E7DC9002600FF /* CrashlyticsBroad.swift */; };
 		015A8A6D230E7DD8002600FF /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 015A8A6B230E7DD8002600FF /* Cartfile */; };
@@ -27,6 +29,16 @@
 		01BE271C23166BFE00BED6CF /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE271223166BFE00BED6CF /* FIRAnalyticsConnector.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0139B5692399187900CD73FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015A8A45230E78DB002600FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015A8A4D230E78DB002600FF;
+			remoteInfo = CrashlyticsBroad;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		0112A45D236AE848001B9A7C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -43,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		0112A45A236AE848001B9A7C /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
+		0139B5632399187900CD73FB /* CrashlyticsBroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashlyticsBroadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0139B5652399187900CD73FB /* CrashlyticsBroadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsBroadTests.swift; sourceTree = "<group>"; };
+		0139B5672399187900CD73FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015A8A4E230E78DB002600FF /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrashlyticsBroad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		015A8A63230E7D56002600FF /* ButterBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ButterBroad.framework; path = Carthage/Build/iOS/ButterBroad.framework; sourceTree = "<group>"; };
 		015A8A68230E7DC9002600FF /* CrashlyticsBroad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticsBroad.swift; sourceTree = "<group>"; };
@@ -64,6 +79,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0139B5602399187900CD73FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0139B5682399187900CD73FB /* CrashlyticsBroad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		015A8A4B230E78DB002600FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,10 +112,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0139B5642399187900CD73FB /* CrashlyticsBroadTests */ = {
+			isa = PBXGroup;
+			children = (
+				0139B5652399187900CD73FB /* CrashlyticsBroadTests.swift */,
+				0139B5672399187900CD73FB /* Info.plist */,
+			);
+			path = CrashlyticsBroadTests;
+			sourceTree = "<group>";
+		};
 		015A8A44230E78DB002600FF = {
 			isa = PBXGroup;
 			children = (
 				015A8A67230E7DC9002600FF /* CrashlyticsBroad */,
+				0139B5642399187900CD73FB /* CrashlyticsBroadTests */,
 				015A8A4F230E78DB002600FF /* Products */,
 				02A4A161F90C894FB5E2EC7A /* Frameworks */,
 			);
@@ -102,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				015A8A4E230E78DB002600FF /* CrashlyticsBroad.framework */,
+				0139B5632399187900CD73FB /* CrashlyticsBroadTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +185,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0139B5622399187900CD73FB /* CrashlyticsBroadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0139B56E2399187900CD73FB /* Build configuration list for PBXNativeTarget "CrashlyticsBroadTests" */;
+			buildPhases = (
+				0139B55F2399187900CD73FB /* Sources */,
+				0139B5602399187900CD73FB /* Frameworks */,
+				0139B5612399187900CD73FB /* Resources */,
+				0139B57023991A8400CD73FB /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0139B56A2399187900CD73FB /* PBXTargetDependency */,
+			);
+			name = CrashlyticsBroadTests;
+			productName = CrashlyticsBroadTests;
+			productReference = 0139B5632399187900CD73FB /* CrashlyticsBroadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		015A8A4D230E78DB002600FF /* CrashlyticsBroad */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015A8A56230E78DB002600FF /* Build configuration list for PBXNativeTarget "CrashlyticsBroad" */;
@@ -177,9 +230,13 @@
 		015A8A45230E78DB002600FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Rosberry;
 				TargetAttributes = {
+					0139B5622399187900CD73FB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					015A8A4D230E78DB002600FF = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
@@ -199,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				015A8A4D230E78DB002600FF /* CrashlyticsBroad */,
+				0139B5622399187900CD73FB /* CrashlyticsBroadTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0139B5612399187900CD73FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		015A8A4C230E78DB002600FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +280,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0139B57023991A8400CD73FB /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AnyCodable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Firebase.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ButterBroad.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AnyCodable.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Firebase.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ButterBroad.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		01D53B172387A52E00863B1A /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +326,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0139B55F2399187900CD73FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0139B56F2399197F00CD73FB /* CrashlyticsBroadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		015A8A4A230E78DB002600FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,7 +344,84 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0139B56A2399187900CD73FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015A8A4D230E78DB002600FF /* CrashlyticsBroad */;
+			targetProxy = 0139B5692399187900CD73FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0139B56B2399187900CD73FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CrashlyticsBroadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0139B56C2399187900CD73FB /* Analyze */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CrashlyticsBroadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Analyze;
+		};
+		0139B56D2399187900CD73FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPVA8JVMU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CrashlyticsBroadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		015A8A54230E78DB002600FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +718,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0139B56E2399187900CD73FB /* Build configuration list for PBXNativeTarget "CrashlyticsBroadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0139B56B2399187900CD73FB /* Debug */,
+				0139B56C2399187900CD73FB /* Analyze */,
+				0139B56D2399187900CD73FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		015A8A48230E78DB002600FF /* Build configuration list for PBXProject "CrashlyticsBroad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
