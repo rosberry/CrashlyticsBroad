@@ -5,9 +5,9 @@
 //
 
 import ButterBroad
-import CrashlyticsBroad
+import FirebaseBroad
 
 extension Butter {
-    static let crashlytics: CrashlyticsBroad = .init()
-    static let common: Butter = .init(broads: crashlytics)
+    static let Firebase: FirebaseBroad = .init()
+    static let common: Butter = .init(broads: Firebase)
 }

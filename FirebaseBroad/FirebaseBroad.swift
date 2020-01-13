@@ -1,5 +1,5 @@
 //
-//  CrashlyticsBroad.swift
+//  FirebaseBroad.swift
 //
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
@@ -7,9 +7,9 @@
 import ButterBroad
 import Firebase
 
-final public class CrashlyticsBroad: ButterBroad.Analytics {
+final public class FirebaseBroad: ButterBroad.Analytics {
 
-    /// Creates an instance of CrashlyticsBroad. To use it one of the overrides of 'FirebaseApp.configure' methods should be called
+    /// Creates an instance of FirebaseBroad. To use it one of the overrides of 'FirebaseApp.configure' methods should be called
     public init() {
     }
 

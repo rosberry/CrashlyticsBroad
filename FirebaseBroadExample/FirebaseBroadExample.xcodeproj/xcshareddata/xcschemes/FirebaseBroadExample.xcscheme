@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1130"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "015A8A4D230E78DB002600FF"
-               BuildableName = "CrashlyticsBroad.framework"
-               BlueprintName = "CrashlyticsBroad"
-               ReferencedContainer = "container:CrashlyticsBroad.xcodeproj">
+               BlueprintIdentifier = "015A8A77230E82E1002600FF"
+               BuildableName = "FirebaseBroadExample.app"
+               BlueprintName = "FirebaseBroadExample"
+               ReferencedContainer = "container:FirebaseBroadExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0139B5622399187900CD73FB"
-               BuildableName = "CrashlyticsBroadTests.xctest"
-               BlueprintName = "CrashlyticsBroadTests"
-               ReferencedContainer = "container:CrashlyticsBroad.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,15 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "015A8A4D230E78DB002600FF"
-            BuildableName = "CrashlyticsBroad.framework"
-            BlueprintName = "CrashlyticsBroad"
-            ReferencedContainer = "container:CrashlyticsBroad.xcodeproj">
+            BlueprintIdentifier = "015A8A77230E82E1002600FF"
+            BuildableName = "FirebaseBroadExample.app"
+            BlueprintName = "FirebaseBroadExample"
+            ReferencedContainer = "container:FirebaseBroadExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -66,18 +57,19 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "015A8A4D230E78DB002600FF"
-            BuildableName = "CrashlyticsBroad.framework"
-            BlueprintName = "CrashlyticsBroad"
-            ReferencedContainer = "container:CrashlyticsBroad.xcodeproj">
+            BlueprintIdentifier = "015A8A77230E82E1002600FF"
+            BuildableName = "FirebaseBroadExample.app"
+            BlueprintName = "FirebaseBroadExample"
+            ReferencedContainer = "container:FirebaseBroadExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Analyze">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

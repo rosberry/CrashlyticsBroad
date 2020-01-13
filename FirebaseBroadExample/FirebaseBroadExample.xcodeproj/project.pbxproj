@@ -46,7 +46,7 @@
 		01013C5F2316587A00CE5875 /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashlyticsBroad.framework; sourceTree = "<group>"; };
 		0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Butter+ApplicationBroads.swift"; sourceTree = "<group>"; };
 		0112A45E236AE86B001B9A7C /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = ../Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
-		015A8A78230E82E1002600FF /* CrashlyticsBroadExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashlyticsBroadExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015A8A78230E82E1002600FF /* FirebaseBroadExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseBroadExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015A8A7B230E82E1002600FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		015A8A7D230E82E1002600FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		015A8A80230E82E1002600FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		015A8A6F230E82E1002600FF = {
 			isa = PBXGroup;
 			children = (
-				015A8A7A230E82E1002600FF /* CrashlyticsBroadExample */,
+				015A8A7A230E82E1002600FF /* FirebaseBroadExample */,
 				015A8A79230E82E1002600FF /* Products */,
 				01013C5123163B4700CE5875 /* Frameworks */,
 			);
@@ -107,12 +107,12 @@
 		015A8A79230E82E1002600FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				015A8A78230E82E1002600FF /* CrashlyticsBroadExample.app */,
+				015A8A78230E82E1002600FF /* FirebaseBroadExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		015A8A7A230E82E1002600FF /* CrashlyticsBroadExample */ = {
+		015A8A7A230E82E1002600FF /* FirebaseBroadExample */ = {
 			isa = PBXGroup;
 			children = (
 				01BE27242316716600BED6CF /* GoogleService-Info.plist */,
@@ -125,15 +125,15 @@
 				015A8A87230E82E3002600FF /* Info.plist */,
 				0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */,
 			);
-			path = CrashlyticsBroadExample;
+			path = FirebaseBroadExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		015A8A77230E82E1002600FF /* CrashlyticsBroadExample */ = {
+		015A8A77230E82E1002600FF /* FirebaseBroadExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 015A8A8A230E82E3002600FF /* Build configuration list for PBXNativeTarget "CrashlyticsBroadExample" */;
+			buildConfigurationList = 015A8A8A230E82E3002600FF /* Build configuration list for PBXNativeTarget "FirebaseBroadExample" */;
 			buildPhases = (
 				015A8A74230E82E1002600FF /* Sources */,
 				015A8A75230E82E1002600FF /* Frameworks */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = CrashlyticsBroadExample;
+			name = FirebaseBroadExample;
 			productName = CrashlyticsBroadExample;
-			productReference = 015A8A78230E82E1002600FF /* CrashlyticsBroadExample.app */;
+			productReference = 015A8A78230E82E1002600FF /* FirebaseBroadExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 015A8A73230E82E1002600FF /* Build configuration list for PBXProject "CrashlyticsBroadExample" */;
+			buildConfigurationList = 015A8A73230E82E1002600FF /* Build configuration list for PBXProject "FirebaseBroadExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				015A8A77230E82E1002600FF /* CrashlyticsBroadExample */,
+				015A8A77230E82E1002600FF /* FirebaseBroadExample */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +422,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CrashlyticsBroadExample/Info.plist;
+				INFOPLIST_FILE = FirebaseBroadExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +446,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CrashlyticsBroadExample/Info.plist;
+				INFOPLIST_FILE = FirebaseBroadExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,7 +531,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CrashlyticsBroadExample/Info.plist;
+				INFOPLIST_FILE = FirebaseBroadExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		015A8A73230E82E1002600FF /* Build configuration list for PBXProject "CrashlyticsBroadExample" */ = {
+		015A8A73230E82E1002600FF /* Build configuration list for PBXProject "FirebaseBroadExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				015A8A88230E82E3002600FF /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		015A8A8A230E82E3002600FF /* Build configuration list for PBXNativeTarget "CrashlyticsBroadExample" */ = {
+		015A8A8A230E82E3002600FF /* Build configuration list for PBXNativeTarget "FirebaseBroadExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				015A8A8B230E82E3002600FF /* Debug */,

@@ -1,5 +1,5 @@
 //
-//  CrashlyticsBroadTests.swift
+//  FirebaseBroadTests.swift
 //
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
@@ -8,7 +8,7 @@ import XCTest
 import ButterBroad
 import Firebase
 import AnyCodable
-@testable import CrashlyticsBroad
+@testable import FirebaseBroad
 
 struct MockedEvent {
     let name: String
@@ -40,7 +40,7 @@ extension Firebase.Analytics {
     }
 }
 
-class CrashlyticsBroadTests: XCTestCase {
+class FirebaseBroadTests: XCTestCase {
 
     var butterbroad: Butter!
     var expectation: XCTestExpectation!
@@ -49,7 +49,7 @@ class CrashlyticsBroadTests: XCTestCase {
         super.setUp()
         Firebase.Analytics.swizzle()
         MockedAnalytics.shared.events = []
-        butterbroad = Butter(broads: CrashlyticsBroad())
+        butterbroad = Butter(broads: FirebaseBroad())
         expectation = self.expectation(for: NSPredicate(block: { analytics, _ in
             guard let analytics = analytics as? MockedAnalytics, analytics.events.count > 0 else {
                 return false
