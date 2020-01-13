@@ -1,0 +1,4 @@
+$(SRCROOT)/Carthage/Build/iOS/AnyCodable.framework
+$(SRCROOT)/Carthage/Build/iOS/ButterBroad.framework
+$(SRCROOT)/Carthage/Build/iOS/Firebase.framework
+$(SRCROOT)/Carthage/Build/iOS/FirebaseBroad.framework

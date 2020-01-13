@@ -10,33 +10,17 @@
 		01013C5523163B4700CE5875 /* ButterBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01013C5323163B4700CE5875 /* ButterBroad.framework */; };
 		0105B2DF238B8046000F9B56 /* Butter+ApplicationBroads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */; };
 		0112A45F236AE86B001B9A7C /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45E236AE86B001B9A7C /* AnyCodable.framework */; };
-		0112A460236AE86B001B9A7C /* AnyCodable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45E236AE86B001B9A7C /* AnyCodable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		015A8A7C230E82E1002600FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A7B230E82E1002600FF /* AppDelegate.swift */; };
 		015A8A7E230E82E1002600FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A7D230E82E1002600FF /* ViewController.swift */; };
 		015A8A81230E82E1002600FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A8A7F230E82E1002600FF /* Main.storyboard */; };
 		015A8A83230E82E3002600FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015A8A82230E82E3002600FF /* Assets.xcassets */; };
 		015A8A86230E82E3002600FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A8A84230E82E3002600FF /* LaunchScreen.storyboard */; };
 		015A8AB423139D1F002600FF /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 015A8AB323139D1F002600FF /* Cartfile */; };
-		01BE271D23166E5600BED6CF /* CrashlyticsBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01013C5223163B4700CE5875 /* CrashlyticsBroad.framework */; };
+		01977E2F23CC8A4A00C694EB /* FirebaseBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01977E2E23CC8A4A00C694EB /* FirebaseBroad.framework */; };
 		01BE272123166E5600BED6CF /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE271E23166E5600BED6CF /* Fabric.framework */; };
 		01BE272223166E5600BED6CF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE271F23166E5600BED6CF /* Firebase.framework */; };
-		01BE272323166E5600BED6CF /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE272023166E5600BED6CF /* Crashlytics.framework */; };
 		01BE27252316716600BED6CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01BE27242316716600BED6CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0112A461236AE86B001B9A7C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0112A460236AE86B001B9A7C /* AnyCodable.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01013C5223163B4700CE5875 /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashlyticsBroad.framework; path = Carthage/Build/iOS/CrashlyticsBroad.framework; sourceTree = "<group>"; };
@@ -54,6 +38,8 @@
 		015A8A85230E82E3002600FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		015A8A87230E82E3002600FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015A8AB323139D1F002600FF /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		01977E2B23CC8A2700C694EB /* FirebaseBroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseBroad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01977E2E23CC8A4A00C694EB /* FirebaseBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseBroad.framework; path = Carthage/Build/iOS/FirebaseBroad.framework; sourceTree = "<group>"; };
 		01BE27072316689500BED6CF /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashlyticsBroad.framework; path = Carthage/Build/iOS/Static/CrashlyticsBroad.framework; sourceTree = "<group>"; };
 		01BE271E23166E5600BED6CF /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = "<group>"; };
 		01BE271F23166E5600BED6CF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
@@ -68,9 +54,8 @@
 			files = (
 				01BE272123166E5600BED6CF /* Fabric.framework in Frameworks */,
 				01BE272223166E5600BED6CF /* Firebase.framework in Frameworks */,
+				01977E2F23CC8A4A00C694EB /* FirebaseBroad.framework in Frameworks */,
 				0112A45F236AE86B001B9A7C /* AnyCodable.framework in Frameworks */,
-				01BE272323166E5600BED6CF /* Crashlytics.framework in Frameworks */,
-				01BE271D23166E5600BED6CF /* CrashlyticsBroad.framework in Frameworks */,
 				01013C5523163B4700CE5875 /* ButterBroad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +66,8 @@
 		01013C5123163B4700CE5875 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01977E2B23CC8A2700C694EB /* FirebaseBroad.framework */,
+				01977E2E23CC8A4A00C694EB /* FirebaseBroad.framework */,
 				0112A45E236AE86B001B9A7C /* AnyCodable.framework */,
 				01BE272023166E5600BED6CF /* Crashlytics.framework */,
 				01BE271E23166E5600BED6CF /* Fabric.framework */,
@@ -139,8 +126,6 @@
 				015A8A75230E82E1002600FF /* Frameworks */,
 				015A8A76230E82E1002600FF /* Resources */,
 				2XE6RQA2UXVT7GQD2ENXYIXA /* Carthage */,
-				01BE2727231673DE00BED6CF /* Crahslytics */,
-				0112A461236AE86B001B9A7C /* Embed Frameworks */,
 				01D53B182387A55000863B1A /* Swiftlint */,
 			);
 			buildRules = (
@@ -201,24 +186,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01BE2727231673DE00BED6CF /* Crahslytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Crahslytics;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Carthage/Build/iOS/Fabric.framework/run\" 88b4c0775675b55f4f571c573fcbe93319b390bd ec2906657b91b7c88ac4785c0305342845790a45af28b609979e240a0d182bdc\n";
-		};
 		01D53B182387A55000863B1A /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,13 +211,13 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/CrashlyticsBroadExample-inputPaths.xcfilelist",
+				"$(SRCROOT)/Carthage/xcfilelists/FirebaseBroadExample-inputPaths.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Carthage;
 			outputFileListPaths = (
-				"$(SRCROOT)/Carthage/xcfilelists/CrashlyticsBroadExample-outputPaths.xcfilelist",
+				"$(SRCROOT)/Carthage/xcfilelists/FirebaseBroadExample-outputPaths.xcfilelist",
 			);
 			outputPaths = (
 			);
