@@ -16,7 +16,7 @@ struct MockedEvent {
 }
 
 final class MockedAnalytics {
-    
+
     private(set) static var shared: MockedAnalytics = .init()
     var events: [MockedEvent] = []
 
