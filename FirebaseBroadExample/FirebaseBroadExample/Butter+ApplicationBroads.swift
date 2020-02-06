@@ -8,6 +8,6 @@ import ButterBroad
 import FirebaseBroad
 
 extension Butter {
-    static let Firebase: FirebaseBroad = .init()
-    static let common: Butter = .init(broads: Firebase)
+    static let firebase: FirebaseBroad = .init()
+    static let common: Butter = .init(broads: firebase)
 }

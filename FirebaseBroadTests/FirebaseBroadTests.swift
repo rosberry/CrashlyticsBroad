@@ -69,7 +69,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.log(Event(name: "test_event"))
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.name == "test_event", "Event should have name 'test_event'")
+        XCTAssertEqual(event.name, "test_event", "Event should have name 'test_event'")
         XCTAssert(event.parameters?.isEmpty == true, "Params not expected")
     }
 
@@ -77,7 +77,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.logEvent(with: "test_event")
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.name == "test_event", "Event should have name 'test_event'")
+        XCTAssertEqual(event.name, "test_event", "Event should have name 'test_event'")
         XCTAssert(event.parameters?.isEmpty == true, "Params not expected")
     }
 
@@ -85,7 +85,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.log(Event(name: "test_event", params: ["param_1": "test"]))
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.parameters?.count == 1, "1 Params is expected")
+        XCTAssertEqual(event.parameters?.count, 1, "1 Params is expected")
         assertParam(event.parameters?["param_1"], value: "test", message: "Expected 'param_1' = 'test'")
     }
 
@@ -93,7 +93,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.logEvent(with: "test_event", params: ["param_1": "test"])
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.parameters?.count == 1, "1 Params is expected")
+        XCTAssertEqual(event.parameters?.count, 1, "1 Params is expected")
         assertParam(event.parameters?["param_1"], value: "test", message: "Expected 'param_1' = 'test'")
     }
 
@@ -101,7 +101,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.logEvent(with: "test_event", params: ["param_1": 10])
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.parameters?.count == 1, "1 Params is expected")
+        XCTAssertEqual(event.parameters?.count, 1, "1 Params is expected")
         assertParam(event.parameters?["param_1"], value: 10, message: "Expected 'param_1' = 10")
     }
 
@@ -109,7 +109,7 @@ class FirebaseBroadTests: XCTestCase {
         butterbroad.logEvent(with: "test_event", params: ["param_1": 0.12345])
         wait(for: [expectation], timeout: 10)
         let event = first(in: MockedAnalytics.shared)
-        XCTAssert(event.parameters?.count == 1, "1 Params is expected")
+        XCTAssertEqual(event.parameters?.count, 1, "1 Params is expected")
         assertParam(event.parameters?["param_1"], value: 0.12345, message: "Expected 'param_1' = 0.12345")
     }
 
