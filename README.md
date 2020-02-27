@@ -1,6 +1,6 @@
 # Firebase broad
 
-[Butterborad](https://github.com/rosberry/crashlytics/) aggreator for [Crashlytics](https://firebase.google.com/products/crashlytics)
+[Butterborad](https://github.com/rosberry/butterbroad/) aggreator for [FirebaseAnalytics](https://firebase.google.com/docs/analytics)
 
 ## Features
 
@@ -23,9 +23,7 @@ github "ntunin/CrashlyticsBroad"
 Add following frameworks from Carhage/Build/iOS folder:
 - AnyCodable.framework
 - Butterbroad.framework
-- Crashlytics.framework
-- CrashlyticsBroad.framework
-- Fabric.framework
+- FirebaseBroad.framework
 - Firebase.framework
 
 ### Manually
