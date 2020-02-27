@@ -18,7 +18,7 @@
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add the framework to your project.
 
 ```
-github "ntunin/CrashlyticsBroad"
+github "ntunin/FirebaseBroad"
 ```
 Add following frameworks from Carhage/Build/iOS folder:
 - AnyCodable.framework
@@ -28,7 +28,7 @@ Add following frameworks from Carhage/Build/iOS folder:
 
 ### Manually
 
-Drag `Sources` folder from [last release](https://github.com/rosberry/CrashlyticsBroad/releases) into your project.
+Drag `Sources` folder from [last release](https://github.com/rosberry/FirebaseBroad/releases) into your project.
 
 ## Usage
 
