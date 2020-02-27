@@ -1,4 +1,4 @@
-# Crashlytics broad
+# Firebase broad
 
 [Butterborad](https://github.com/rosberry/crashlytics/) aggreator for [Crashlytics](https://firebase.google.com/products/crashlytics)
 
@@ -38,7 +38,7 @@ Drag `Sources` folder from [last release](https://github.com/rosberry/Crashlytic
 
 ```swift
 import ButterBroad
-import CrashlyticsBroad
+import FirebaseBroad
 
 extension Butter {
     static let crashlytics: CrashlyticsBroad = .init()
