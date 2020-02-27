@@ -1,0 +1,3 @@
+$(SRCROOT)/Carthage/Build/iOS/ButterBroad.framework
+$(SRCROOT)/Carthage/Build/iOS/CrashlyticsBroad.framework
+$(SRCROOT)/Carthage/Build/iOS/Firebase.framework

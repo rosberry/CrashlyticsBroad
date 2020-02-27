@@ -20,10 +20,13 @@ Create a `Cartfile` that lists the framework and run `carthage update`. Follow t
 ```
 github "ntunin/CrashlyticsBroad"
 ```
-
-#### Manually
-
-Drag `Sources` folder from [last release](https://github.com/ntunin/CrashlyticsBroad/releases) into your project.
+Add following frameworks from Carhage/Build/iOS folder:
+- AnyCodable.framework
+- Butterbroad.framework
+- Crashlytics.framework
+- CrashlyticsBroad.framework
+- Fabric.framework
+- Firebase.framework
 
 ## Usage
 
