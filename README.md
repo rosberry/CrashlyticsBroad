@@ -28,6 +28,10 @@ Add following frameworks from Carhage/Build/iOS folder:
 - Fabric.framework
 - Firebase.framework
 
+### Manually
+
+Drag `Sources` folder from [last release](https://github.com/rosberry/CrashlyticsBroad/releases) into your project.
+
 ## Usage
 
 #### Creating a broad
