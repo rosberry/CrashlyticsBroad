@@ -1,6 +1,6 @@
 # Firebase broad
 
-[Butterborad](https://github.com/rosberry/butterbroad/) aggreator for [FirebaseAnalytics](https://firebase.google.com/docs/analytics)
+[Butterbroad](https://github.com/rosberry/butterbroad/) aggreator for [FirebaseAnalytics](https://firebase.google.com/docs/analytics)
 
 ## Features
 
