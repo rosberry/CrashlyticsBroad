@@ -1,6 +1,6 @@
-# Crashlytics broad
+# Firebase broad
 
-[Butterborad](https://github.com/rosberry/crashlytics/) aggreator for [Crashlytics](https://firebase.google.com/products/crashlytics)
+[Butterborad](https://github.com/rosberry/butterbroad/) aggreator for [FirebaseAnalytics](https://firebase.google.com/docs/analytics)
 
 ## Features
 
@@ -18,19 +18,17 @@
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add the framework to your project.
 
 ```
-github "ntunin/CrashlyticsBroad"
+github "ntunin/FirebaseBroad"
 ```
 Add following frameworks from Carhage/Build/iOS folder:
 - AnyCodable.framework
 - Butterbroad.framework
-- Crashlytics.framework
-- CrashlyticsBroad.framework
-- Fabric.framework
+- FirebaseBroad.framework
 - Firebase.framework
 
 ### Manually
 
-Drag `Sources` folder from [last release](https://github.com/rosberry/CrashlyticsBroad/releases) into your project.
+Drag `Sources` folder from [last release](https://github.com/rosberry/FirebaseBroad/releases) into your project.
 
 ## Usage
 
@@ -38,11 +36,11 @@ Drag `Sources` folder from [last release](https://github.com/rosberry/Crashlytic
 
 ```swift
 import ButterBroad
-import CrashlyticsBroad
+import FirebaseBroad
 
 extension Butter {
-    static let crashlytics: CrashlyticsBroad = .init()
-    static let common: Butter = .init(broads: crashlytics)
+    static let firebase: FirebaseBroad = .init()
+    static let common: Butter = .init(broads: firebase)
 }
 ```
 
