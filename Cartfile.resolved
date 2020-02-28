@@ -1,3 +1,3 @@
-binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.15.0"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" "6.18.0"
 github "Flight-School/AnyCodable" "0.2.3"
-github "rosberry/ButterBroad" "8ee770c1de847ded8e79c20923a93a7a1b1f0508"
+github "rosberry/ButterBroad" "06dd4bdbeba64826637277f192e9186327d438a7"

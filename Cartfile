@@ -1,2 +1,2 @@
-github "rosberry/ButterBroad" "feature/ISD-187-agregator"
+github "rosberry/ButterBroad"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"

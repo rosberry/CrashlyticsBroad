@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01013C5523163B4700CE5875 /* ButterBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01013C5323163B4700CE5875 /* ButterBroad.framework */; };
 		0105B2DF238B8046000F9B56 /* Butter+ApplicationBroads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */; };
+		010C42092407E40F003D20A8 /* FirebaseBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010C42082407E40F003D20A8 /* FirebaseBroad.framework */; };
 		0112A45F236AE86B001B9A7C /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45E236AE86B001B9A7C /* AnyCodable.framework */; };
 		015A8A7C230E82E1002600FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A7B230E82E1002600FF /* AppDelegate.swift */; };
 		015A8A7E230E82E1002600FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A7D230E82E1002600FF /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		01013C5223163B4700CE5875 /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashlyticsBroad.framework; path = Carthage/Build/iOS/CrashlyticsBroad.framework; sourceTree = "<group>"; };
 		01013C5323163B4700CE5875 /* ButterBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ButterBroad.framework; path = Carthage/Build/iOS/ButterBroad.framework; sourceTree = "<group>"; };
 		0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Butter+ApplicationBroads.swift"; sourceTree = "<group>"; };
+		010C42082407E40F003D20A8 /* FirebaseBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseBroad.framework; path = Carthage/Build/iOS/FirebaseBroad.framework; sourceTree = "<group>"; };
 		0112A45E236AE86B001B9A7C /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = ../Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
 		015A8A78230E82E1002600FF /* FirebaseBroadExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseBroadExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015A8A7B230E82E1002600FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010C42092407E40F003D20A8 /* FirebaseBroad.framework in Frameworks */,
 				0112A45F236AE86B001B9A7C /* AnyCodable.framework in Frameworks */,
 				01013C5523163B4700CE5875 /* ButterBroad.framework in Frameworks */,
 				0196967023DAAEED005F53CF /* Firebase.framework in Frameworks */,
@@ -58,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				01977E2B23CC8A2700C694EB /* FirebaseBroad.framework */,
+				010C42082407E40F003D20A8 /* FirebaseBroad.framework */,
 				0112A45E236AE86B001B9A7C /* AnyCodable.framework */,
 				01BE272023166E5600BED6CF /* Crashlytics.framework */,
 				01BE271E23166E5600BED6CF /* Fabric.framework */,
