@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		010FAF9E2490C82A00EC8BA5 /* run in Resources */ = {isa = PBXBuildFile; fileRef = 010FAF9A2490C82A00EC8BA5 /* run */; };
 		010FAF9F2490C82B00EC8BA5 /* upload-symbols in Resources */ = {isa = PBXBuildFile; fileRef = 010FAF9B2490C82A00EC8BA5 /* upload-symbols */; };
+		010FAFA22490CA2A00EC8BA5 /* FirebaseCrashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010FAFA12490CA2A00EC8BA5 /* FirebaseCrashlytics.framework */; };
+		010FAFA32490CA2B00EC8BA5 /* FirebaseCrashlytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 010FAFA12490CA2A00EC8BA5 /* FirebaseCrashlytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0112A45B236AE848001B9A7C /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45A236AE848001B9A7C /* AnyCodable.framework */; };
 		0139B5682399187900CD73FB /* FirebaseBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A8A4E230E78DB002600FF /* FirebaseBroad.framework */; };
 		0139B56F2399197F00CD73FB /* FirebaseBroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B5652399187900CD73FB /* FirebaseBroadTests.swift */; };
@@ -41,9 +43,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		010FAFA42490CA2B00EC8BA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				010FAFA32490CA2B00EC8BA5 /* FirebaseCrashlytics.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		010FAF9A2490C82A00EC8BA5 /* run */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run; sourceTree = "<group>"; };
 		010FAF9B2490C82A00EC8BA5 /* upload-symbols */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "upload-symbols"; sourceTree = "<group>"; };
+		010FAFA12490CA2A00EC8BA5 /* FirebaseCrashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCrashlytics.framework; path = Carthage/Build/iOS/FirebaseCrashlytics.framework; sourceTree = "<group>"; };
 		0112A45A236AE848001B9A7C /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
 		0139B5632399187900CD73FB /* FirebaseBroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseBroadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0139B5652399187900CD73FB /* FirebaseBroadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBroadTests.swift; sourceTree = "<group>"; };
@@ -106,6 +123,7 @@
 				0196965723DAAE0A005F53CF /* nanopb.framework in Frameworks */,
 				0196965323DAAE0A005F53CF /* Fabric.framework in Frameworks */,
 				0196965D23DAAE0A005F53CF /* GoogleDataTransport.framework in Frameworks */,
+				010FAFA22490CA2A00EC8BA5 /* FirebaseCrashlytics.framework in Frameworks */,
 				0196966A23DAAE0A005F53CF /* FirebaseInstallations.framework in Frameworks */,
 				0196966323DAAE0A005F53CF /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				0196965B23DAAE0A005F53CF /* GoogleDataTransportCCTSupport.framework in Frameworks */,
@@ -167,6 +185,7 @@
 		02A4A161F90C894FB5E2EC7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				010FAFA12490CA2A00EC8BA5 /* FirebaseCrashlytics.framework */,
 				0196966C23DAAE3F005F53CF /* PromisesObjC.framework */,
 				0196966923DAAE0A005F53CF /* FirebaseInstallations.framework */,
 				0196964B23DAAD0F005F53CF /* FIRAnalyticsConnector.framework */,
@@ -240,6 +259,7 @@
 				015A8A4B230E78DB002600FF /* Frameworks */,
 				015A8A4C230E78DB002600FF /* Resources */,
 				01D53B172387A52E00863B1A /* Swiftlint */,
+				010FAFA42490CA2B00EC8BA5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
