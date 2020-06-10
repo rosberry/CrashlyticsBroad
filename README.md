@@ -14,11 +14,14 @@
 
 ## Installation
 
+In the project navigator select a target, navigate to `Build Settings` and set `Enable Bitcode` to `No`
+
 #### Carthage
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add the framework to your project.
 
 ```
-github "ntunin/FirebaseBroad"
+github "rosberry/ButterBroad"
+github "rosberry/CrashlyticsBroad"
 ```
 Add following frameworks from Carhage/Build/iOS folder:
 - AnyCodable.framework
