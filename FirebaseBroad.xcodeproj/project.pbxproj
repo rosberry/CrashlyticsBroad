@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010FAF9E2490C82A00EC8BA5 /* run in Resources */ = {isa = PBXBuildFile; fileRef = 010FAF9A2490C82A00EC8BA5 /* run */; };
+		010FAF9F2490C82B00EC8BA5 /* upload-symbols in Resources */ = {isa = PBXBuildFile; fileRef = 010FAF9B2490C82A00EC8BA5 /* upload-symbols */; };
 		0112A45B236AE848001B9A7C /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112A45A236AE848001B9A7C /* AnyCodable.framework */; };
 		0139B5682399187900CD73FB /* FirebaseBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A8A4E230E78DB002600FF /* FirebaseBroad.framework */; };
 		0139B56F2399197F00CD73FB /* FirebaseBroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139B5652399187900CD73FB /* FirebaseBroadTests.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010FAF9A2490C82A00EC8BA5 /* run */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run; sourceTree = "<group>"; };
+		010FAF9B2490C82A00EC8BA5 /* upload-symbols */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "upload-symbols"; sourceTree = "<group>"; };
 		0112A45A236AE848001B9A7C /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
 		0139B5632399187900CD73FB /* FirebaseBroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseBroadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0139B5652399187900CD73FB /* FirebaseBroadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBroadTests.swift; sourceTree = "<group>"; };
@@ -112,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010FAF972490C82A00EC8BA5 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				010FAF9A2490C82A00EC8BA5 /* run */,
+				010FAF9B2490C82A00EC8BA5 /* upload-symbols */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		0139B5642399187900CD73FB /* FirebaseBroadTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		015A8A44230E78DB002600FF = {
 			isa = PBXGroup;
 			children = (
+				010FAF972490C82A00EC8BA5 /* Scripts */,
 				015A8A67230E7DC9002600FF /* FirebaseBroad */,
 				0139B5642399187900CD73FB /* FirebaseBroadTests */,
 				015A8A4F230E78DB002600FF /* Products */,
@@ -285,7 +299,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010FAF9E2490C82A00EC8BA5 /* run in Resources */,
 				015A8A6D230E7DD8002600FF /* Cartfile in Resources */,
+				010FAF9F2490C82B00EC8BA5 /* upload-symbols in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
