@@ -1,2 +1,2 @@
 github "rosberry/ButterBroad"
-github "rosberry/CrashlyticsBroad"
+github "rosberry/CrashlyticsBroad" "hotfix/isd-326"
