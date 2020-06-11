@@ -18,7 +18,11 @@ In the project navigator select a target, navigate to `Build Settings` and set `
 
 Add  build phase with name `Crashlytics` with following content
 `"$PROJECT_DIR/Carthage/Build/iOS/FirebaseBroad.framework/run"`
-and pa
+and pass DSYM and info.plist as input files of the scrypt
+```
+${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}
+$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)
+```
 
 #### Carthage
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add the framework to your project.
@@ -31,7 +35,7 @@ Add following frameworks from Carhage/Build/iOS folder:
 - AnyCodable.framework
 - Butterbroad.framework
 - FirebaseBroad.framework
-- Firebase.framework
+- FirebaseAnalytics.framework
 
 ### Manually
 
