@@ -5,7 +5,6 @@
 //
 
 import ButterBroad
-import FirebaseBroad
 
 extension Butter {
     static let firebase: FirebaseBroad = .init()
