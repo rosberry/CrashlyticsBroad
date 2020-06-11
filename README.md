@@ -43,6 +43,20 @@ Drag `Sources` folder from [last release](https://github.com/rosberry/FirebaseBr
 
 ## Usage
 
+In the AppDelegate
+
+```swift
+import Firebase
+
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: LaunchOptions?) -> Bool {
+    ...
+    FirebaseApp.configure()
+    Butter.activationHandler?()
+    ...
+}
+```
+
 #### Creating a broad
 
 ```swift
