@@ -14,7 +14,8 @@
 
 ## Installation
 
-In the project navigator select a target, navigate to `Build Settings` and set `Enable Bitcode` to `No`
+In the project navigator select a target, navigate to `Build Settings` and set `Enable Bitcode` to `No`.
+Add ` -ObjC` to `Other Linker Flags`
 
 Add  build phase with name `Crashlytics` with following content
 `"$PROJECT_DIR/Carthage/Build/iOS/FirebaseBroad.framework/run"`

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01013C5523163B4700CE5875 /* ButterBroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01013C5323163B4700CE5875 /* ButterBroad.framework */; };
-		0105B2DF238B8046000F9B56 /* Butter+ApplicationBroads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */; };
+		0105B2DF238B8046000F9B56 /* Butter+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105B2DE238B8046000F9B56 /* Butter+App.swift */; };
 		010FB11E24920E1A00EC8BA5 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010FB11124920E1900EC8BA5 /* FIRAnalyticsConnector.framework */; };
 		010FB12024920E1A00EC8BA5 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010FB11224920E1A00EC8BA5 /* GoogleDataTransport.framework */; };
 		010FB12224920E1A00EC8BA5 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010FB11324920E1A00EC8BA5 /* GoogleAppMeasurement.framework */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		01013C5223163B4700CE5875 /* CrashlyticsBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashlyticsBroad.framework; path = Carthage/Build/iOS/CrashlyticsBroad.framework; sourceTree = "<group>"; };
 		01013C5323163B4700CE5875 /* ButterBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ButterBroad.framework; path = Carthage/Build/iOS/ButterBroad.framework; sourceTree = "<group>"; };
-		0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Butter+ApplicationBroads.swift"; sourceTree = "<group>"; };
+		0105B2DE238B8046000F9B56 /* Butter+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Butter+App.swift"; sourceTree = "<group>"; };
 		010C42082407E40F003D20A8 /* FirebaseBroad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseBroad.framework; path = Carthage/Build/iOS/FirebaseBroad.framework; sourceTree = "<group>"; };
 		010FB11124920E1900EC8BA5 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = ../Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		010FB11224920E1A00EC8BA5 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = ../Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				015A8A82230E82E3002600FF /* Assets.xcassets */,
 				015A8A84230E82E3002600FF /* LaunchScreen.storyboard */,
 				015A8A87230E82E3002600FF /* Info.plist */,
-				0105B2DE238B8046000F9B56 /* Butter+ApplicationBroads.swift */,
+				0105B2DE238B8046000F9B56 /* Butter+App.swift */,
 			);
 			path = FirebaseBroadExample;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				015A8A7E230E82E1002600FF /* ViewController.swift in Sources */,
-				0105B2DF238B8046000F9B56 /* Butter+ApplicationBroads.swift in Sources */,
+				0105B2DF238B8046000F9B56 /* Butter+App.swift in Sources */,
 				015A8A7C230E82E1002600FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -477,6 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -562,6 +564,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosberry.CrashlyticsBroadExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

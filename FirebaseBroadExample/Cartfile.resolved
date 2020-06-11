@@ -2,4 +2,4 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.j
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashlyticsBinary.json" "6.26.0"
 github "Flight-School/AnyCodable" "0.2.3"
 github "rosberry/ButterBroad" "1.0"
-github "rosberry/CrashlyticsBroad" "7a1527384093294b3be0d402d193f1053c7f8b2a"
+github "rosberry/CrashlyticsBroad" "aeeeffeed00983b1d52d49c7bfc44ead47050a79"
