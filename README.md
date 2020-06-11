@@ -16,6 +16,10 @@
 
 In the project navigator select a target, navigate to `Build Settings` and set `Enable Bitcode` to `No`
 
+Add  build phase with name `Crashlytics` with following content
+`"$PROJECT_DIR/Carthage/Build/iOS/FirebaseBroad.framework/run"`
+and pa
+
 #### Carthage
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) to add the framework to your project.
 
