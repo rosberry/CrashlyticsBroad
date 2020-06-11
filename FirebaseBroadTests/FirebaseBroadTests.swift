@@ -49,7 +49,7 @@ class FirebaseBroadTests: XCTestCase {
         super.setUp()
         Firebase.Analytics.swizzle()
         MockedAnalytics.shared.events = []
-        butterbroad = Butter(broads: FirebaseBroad())
+        butterbroad = Butter(broads: FirebaseBroad(Analytics.self))
         expectation = self.expectation(for: NSPredicate(block: { analytics, _ in
             guard let analytics = analytics as? MockedAnalytics, analytics.events.count > 0 else {
                 return false
