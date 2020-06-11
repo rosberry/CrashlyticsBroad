@@ -16,9 +16,11 @@ final public class FirebaseBroad: ButterBroad.Analytics {
     private let selector: Selector
 
     /// Creates an instance of FirebaseBroad. To use it one of the overrides of 'FirebaseApp.configure' methods should be called
-    public init() {
+    ///
+    /// - analytics: Firebase.Analytics.self
+    public init(_ analytics: AnyClass) {
         let selector = NSSelectorFromString("logEventWithName:parameters:")
-        guard let firebaseClass = NSClassFromString("FIRAnalytics") as AnyObject as? NSObjectProtocol,
+        guard let firebaseClass = analytics as AnyObject as? NSObjectProtocol,
             firebaseClass.responds(to: selector)  else {
             fatalError("`Firebase` instance is not looks configured properly")
         }
