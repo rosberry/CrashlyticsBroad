@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010FB141249215B100EC8BA5 /* run in Resources */ = {isa = PBXBuildFile; fileRef = 010FB13E2492157900EC8BA5 /* run */; };
+		010FB142249215B100EC8BA5 /* upload-symbols in Resources */ = {isa = PBXBuildFile; fileRef = 010FB13F2492157900EC8BA5 /* upload-symbols */; };
 		015A8A69230E7DC9002600FF /* FirebaseBroad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A8A68230E7DC9002600FF /* FirebaseBroad.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		010FB13A2492156900EC8BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010FB13E2492157900EC8BA5 /* run */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run; sourceTree = "<group>"; };
+		010FB13F2492157900EC8BA5 /* upload-symbols */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "upload-symbols"; sourceTree = "<group>"; };
+		010FB1402492157900EC8BA5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		0139B5632399187900CD73FB /* FirebaseBroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FirebaseBroadTests.xctest; path = "/Users/nick/Documents/GitHub/CrashlyticsBroad/build/Debug-iphoneos/FirebaseBroadTests.xctest"; sourceTree = "<absolute>"; };
 		015A8A4E230E78DB002600FF /* FirebaseBroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseBroad.framework; path = "/Users/nick/Documents/GitHub/CrashlyticsBroad/build/Debug-iphoneos/FirebaseBroad.framework"; sourceTree = "<absolute>"; };
 		015A8A68230E7DC9002600FF /* FirebaseBroad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseBroad.swift; sourceTree = "<group>"; };
@@ -57,9 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010FB13B2492157900EC8BA5 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				010FB13E2492157900EC8BA5 /* run */,
+				010FB13F2492157900EC8BA5 /* upload-symbols */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		015A8A44230E78DB002600FF = {
 			isa = PBXGroup;
 			children = (
+				010FB1402492157900EC8BA5 /* Cartfile */,
+				010FB13B2492157900EC8BA5 /* Scripts */,
 				015A8A67230E7DC9002600FF /* FirebaseBroad */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +84,7 @@
 		015A8A67230E7DC9002600FF /* FirebaseBroad */ = {
 			isa = PBXGroup;
 			children = (
+				010FB13A2492156900EC8BA5 /* Info.plist */,
 				015A8A68230E7DC9002600FF /* FirebaseBroad.swift */,
 			);
 			path = FirebaseBroad;
@@ -173,6 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010FB141249215B100EC8BA5 /* run in Resources */,
+				010FB142249215B100EC8BA5 /* upload-symbols in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
